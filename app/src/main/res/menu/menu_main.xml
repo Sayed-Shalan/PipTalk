@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pip.talk.pip.pc.piptalk.home.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@mipmap/ic_search_white_48dp"
+        android:title="@string/searchButton"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        android:title="@string/profile"
+        />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_changePassword"
+        android:title="Change Password"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_contact_us"
+        android:title="@string/contact_us"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        />
+
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_help"
+        android:title="@string/help"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+</menu>

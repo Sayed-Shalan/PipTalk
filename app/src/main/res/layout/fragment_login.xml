@@ -1,0 +1,135 @@
+<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        >
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:src="@drawable/title"
+           />
+    </FrameLayout>
+
+
+
+
+<com.pip.talk.pip.pc.piptalk.MyEditText
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="20dp"
+    android:id="@+id/login_username_txt"
+    android:textSize="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/user_name"
+    android:textColorHint="@color/lightGray"
+    android:textColor="@android:color/white"
+    android:maxLength="15"
+    android:background="@android:color/transparent"
+    android:padding="16dp"
+    android:gravity="left"
+    android:drawableLeft="@drawable/user"
+    android:drawablePadding="20dp"
+
+ />
+    <View
+        android:id="@+id/SplitLine_hor"
+        android:layout_width="match_parent"
+        android:layout_height= "1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="80dp"
+        android:background="@color/lighBink"/>
+
+
+        <com.pip.talk.pip.pc.piptalk.MyEditText
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHighlight="@android:color/white"
+            android:id="@+id/login_password_txt"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="@color/lightGray"
+            android:textColor="@android:color/white"
+            android:maxLength="15"
+            android:background="@android:color/transparent"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:gravity="left"
+            android:drawableLeft="@drawable/pass"
+            android:drawablePadding="20dp"
+            />
+    <View
+        android:id="@+id/SplitLine_hor2"
+        android:layout_width="match_parent"
+        android:layout_height= "1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="80dp"
+        android:background="@color/lighBink"/>
+    <ImageButton
+        android:elevation="3dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/login_btn"
+        android:layout_width="230dp"
+        android:src="@drawable/login_icon"
+        android:layout_height="50dp"
+        android:background="@drawable/rect1"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+
+        />
+
+</LinearLayout>
+</ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightGray"
+            android:textSize="15dp"
+            android:text="Create new account?"
+            />
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/siginup_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="Signup"
+            android:background="@android:color/transparent"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

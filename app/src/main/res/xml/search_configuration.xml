@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:label="string resource"
+    android:hint="string resource"
+    android:searchMode="queryRewriteFromData"
+    android:searchButtonText="string resource"
+    android:inputType="text"
+    android:imeOptions="actionGo"
+    android:searchSuggestAuthority="string"
+    android:searchSuggestPath="string"
+    android:searchSuggestSelection="string"
+    android:searchSuggestIntentAction="string"
+    android:searchSuggestIntentData="string"
+    android:includeInGlobalSearch="true"
+    android:searchSettingsDescription="string resource"
+    android:queryAfterZeroResults= "false">
+    <!--android:voiceSearchMode=["showVoiceSearchButton" | "launchWebSearch" | "launchRecognizer"]-->
+    <!--android:voiceLanguageModel=["free-form" | "web_search"]-->
+    <!--android:voicePromptText="string resource"-->
+    <!--android:voiceLanguage="string"-->
+    <!--android:voiceMaxResults="int"-->
+
+<actionkey
+android:keycode="KEYCODE_0"
+android:queryActionMsg="string"
+android:suggestActionMsg="string"
+android:suggestActionMsgColumn="string" />
+
+</searchable>
+

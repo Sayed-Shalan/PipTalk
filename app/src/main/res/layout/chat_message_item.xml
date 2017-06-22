@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bubble_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="end"
+        android:id="@+id/linearSend"
+        android:background="@drawable/bubble2"
+        >
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="12"
+            tools:text="Hi! new message"
+            android:gravity="end"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:id="@+id/message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="12"
+            android:layout_gravity="end"
+            android:gravity="end"
+            tools:text="5:30pm"
+            android:textColor="@color/black" />
+        <ImageButton
+            android:id="@+id/alert_not_sent"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_error_black_24dp"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearReceive"
+        android:background="@drawable/bubble1">
+        <TextView
+            android:id="@+id/message2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="12"
+            android:layout_gravity="start"
+            android:gravity="start"
+
+            tools:text="Hi! new message"
+            android:textColor="@android:color/primary_text_light" />
+        <TextView
+            android:id="@+id/message2_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="12"
+            android:layout_gravity="start"
+            android:gravity="start"
+            tools:text="5:30pm"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+

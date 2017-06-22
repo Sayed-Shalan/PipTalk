@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "995953923725",
+    "firebase_url": "https://pip-talk.firebaseio.com",
+    "project_id": "pip-talk",
+    "storage_bucket": "pip-talk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995953923725:android:f3cd6d0113e725c5",
+        "android_client_info": {
+          "package_name": "com.pip.talk.pip.pc.piptalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995953923725-17vmii7e8nun1h1bq8806f75fi8dtth5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pip.talk.pip.pc.piptalk",
+            "certificate_hash": "0FD7D68D351F15C05EECE3D5A953D19BA6E1115E"
+          }
+        },
+        {
+          "client_id": "995953923725-g12t6qbutpfcfcfvh1bdoja5297lun4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQwh_ljjfmyxcd5n7qYCOw-VRGYQ4BSLY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "995953923725-g12t6qbutpfcfcfvh1bdoja5297lun4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

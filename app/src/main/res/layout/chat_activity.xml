@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        tools:context="com.pip.talk.pip.pc.piptalk.chat.ChatActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_ChatActivity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/userAndPic"
+                android:textIsSelectable="true"
+                android:clickable="true"
+                android:background="@drawable/user_and_pic"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                >
+                <ImageView
+                    android:id="@+id/chat_profile_pic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/user_image"
+                    android:src="@drawable/pp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:transitionName="@string/chat_profile_pic"
+                   android:layout_gravity="center_horizontal|center_vertical"
+                    />
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
+                    android:id="@+id/chat_username"
+                    android:text="@string/username"
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textColor="@color/White"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:transitionName="@string/chat_username"
+
+                    />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+
+        <FrameLayout
+            android:layout_marginTop="?actionBarSize"
+            android:id="@+id/chat_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:ignore="MergeRootFrame">
+        </FrameLayout>
+
+
+
+    </android.support.design.widget.CoordinatorLayout>
+

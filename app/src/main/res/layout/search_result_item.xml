@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginEnd="16dp"
+   >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:maxWidth="100dp"
+            android:maxHeight="100dp"
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:id="@+id/foundContactImage"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:padding="24dp"
+            android:contentDescription="@string/profilePicture"
+            android:transitionName="@string/view_profile_pic"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/foundContactName"
+            android:text="Karim selim"
+            android:textStyle="italic"
+            android:textSize="30sp"
+            android:maxLines="1"
+            android:textColor="@color/colorAccent"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center_horizontal|center_vertical|end"
+            android:transitionName="@string/view_profile_usr"
+            />
+
+        </LinearLayout>
+
+</FrameLayout>

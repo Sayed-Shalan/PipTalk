@@ -1,0 +1,10 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 140 ciObject found
+ciMethod java/lang/Object getClass ()Ljava/lang/Class; 2049 1 256 0 -1
+ciMethod java/lang/Object equals (Ljava/lang/Object;)Z 4097 1 3299 0 -1
+ciMethod java/lang/String compareTo (Ljava/lang/String;)I 1617 49153 2666 0 -1
+ciMethod java/lang/Class getName ()Ljava/lang/String; 241 1 30 0 -1
+ciMethod java/util/Arrays equals ([Ljava/lang/Object;[Ljava/lang/Object;)Z 4089 113 5631 0 0
+ciMethodData java/util/Arrays equals ([Ljava/lang/Object;[Ljava/lang/Object;)Z 2 5631 orig 264 72 34 45 113 0 0 0 0 120 93 181 5 0 0 0 0 176 2 0 0 96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 1 0 0 1 160 0 0 33 2 0 0 0 0 0 0 0 0 0 0 2 0 0 0 1 0 23 0 2 0 0 0 96 1 0 0 255 255 255 255 7 0 2 0 0 0 0 0 data 44 0x20007 0x13ff 0x20 0x0 0x80007 0x0 0x40 0x13ff 0xc0007 0x13ff 0x20 0x0 0x170007 0x13ff 0x20 0x0 0x200007 0xd19 0xe0 0x72a 0x2f0007 0x72a 0x58 0x0 0x340007 0x0 0x88 0x0 0x370003 0x0 0x68 0x3e0005 0x0 0x884f270 0x72a 0x0 0x0 0x410007 0x44 0x20 0x6e6 0x490003 0x44 0xffffffffffffff38 oops 1

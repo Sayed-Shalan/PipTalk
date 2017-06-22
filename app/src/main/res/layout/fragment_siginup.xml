@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:id="@+id/signup_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+            <ImageButton
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/user_image"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:maxWidth="120dp"
+                android:minWidth="120dp"
+                android:maxHeight="120dp"
+                android:minHeight="120dp"
+                android:contentDescription="@string/user_image"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent"
+                />
+
+
+            <com.pip.talk.pip.pc.piptalk.MyEditText
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/signup_userTxt"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name"
+                android:textColorHint="@color/lightGray"
+                android:textColor="@android:color/white"
+                android:maxLength="15"
+                android:background="@android:color/transparent"
+                android:padding="16dp"
+                android:gravity="start"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="20dp"
+                />
+
+        <View
+            android:id="@+id/SplitLine_hor"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="80dp"
+            android:background="@color/lighBink"/>
+
+            <com.pip.talk.pip.pc.piptalk.MyEditText
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHighlight="@android:color/white"
+                android:id="@+id/signup_passTxt"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:textColorHint="@color/lightGray"
+                android:textColor="@android:color/white"
+                android:maxLength="15"
+                android:background="@android:color/transparent"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:gravity="start"
+                android:drawableLeft="@drawable/pass"
+                android:drawablePadding="20dp"
+                />
+
+        <View
+            android:id="@+id/SplitLine_hor2"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="80dp"
+            android:background="@color/lighBink"/>
+
+        <com.pip.talk.pip.pc.piptalk.MyEditText
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:textColorHighlight="@android:color/white"
+            android:id="@+id/signup_dateTxt"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dateOB"
+            android:textColorHint="@color/lightGray"
+            android:textColor="@android:color/white"
+            android:maxLength="15"
+            android:inputType="date"
+            android:drawableRight="@drawable/calendar_icon"
+            android:focusable="false"
+            android:background="@android:color/transparent"
+            android:padding="16dp"
+            android:gravity="start"
+            android:drawableLeft="@drawable/birthdate_icon"
+            android:drawablePadding="20dp"
+            />
+
+        <View
+            android:id="@+id/SplitLine_hor3"
+            android:layout_width="match_parent"
+            android:layout_height= "1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="80dp"
+            android:background="@color/lighBink"/>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+            <Spinner
+                android:id="@+id/signup_language_spinner_GONE"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                />
+            <Spinner
+                android:layout_marginLeft="50dp"
+                android:id="@+id/signup_gender_spinner_GONE"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+        <ImageButton
+            android:elevation="3dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/signup_btn"
+            android:layout_width="230dp"
+            android:src="@drawable/siginup_icon"
+            android:layout_height="50dp"
+            android:background="@drawable/rect1"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="35dp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

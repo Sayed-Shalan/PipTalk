@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pip.talk.pip.pc.piptalk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <application
+        android:name=".ApplicationClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name=".offlineDB.UserOfflineDBProvider"
+            android:exported="false"
+            android:authorities="com.pip.talk.pip.pc.piptalk.provider" >
+        </provider>
+
+        <provider
+            android:name=".offlineDB.ChatOfflineDBProvider"
+            android:exported="false"
+            android:authorities="com.pip.talk.pip.pc.piptalk.chatter" >
+        </provider>
+
+        <provider
+            android:name=".offlineDB.UserOfflineDBProvider"
+            android:exported="false"
+            android:authorities="com.pip.talk.pip.pc.piptalk.provider" >
+        </provider>
+        <activity
+            android:name=".home.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".search.SearchActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".home.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY|android.app.searchable"
+                android:resource="@xml/search_configuration"
+                android:value="com.pip.talk.pip.pc.piptalk.SearchActivity" />
+        </activity>
+        <activity
+            android:name=".chat.ChatActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".home.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pip.talk.pip.pc.piptalk.chat.ChatActivity" />
+        </activity>
+        <activity
+            android:name=".Login.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pip.talk.pip.pc.piptalk.Login.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".Signup.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pip.talk.pip.pc.piptalk.Signup.SignUpActivity" />
+        </activity>
+        <activity
+            android:name=".profile.ProfileActivity"
+            android:parentActivityName=".home.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".profile.ProfileActivity" />
+        </activity>
+        <activity
+            android:name=".Settings.SettingsActivity"
+            android:parentActivityName=".home.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Settings.SettingsActivity" />
+        </activity>
+
+        <activity
+            android:name=".profile.ViewUserProfileActivity"
+            android:parentActivityName=".chat.ChatActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".profile.ViewUserProfileActivity" />
+        </activity>
+
+
+
+        <activity android:name=".profile.EditProfileActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".profile.ProfileActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".profile.ProfileActivity" />
+        </activity>
+
+        <activity android:name=".Change_Password.ChangePasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".home.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Change_Password.ChangePasswordActivity" />
+        </activity>
+
+
+    </application>
+
+</manifest>
